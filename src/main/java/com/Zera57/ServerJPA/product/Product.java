@@ -1,11 +1,28 @@
 package com.Zera57.ServerJPA.product;
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class Product {
+    @Id
+    @SequenceGenerator(
+            name = "student_sequence",
+            sequenceName = "student_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "student_sequence"
+    )
     private Long id;
     private String name;
     private String description;
     private Integer cost;
     private Integer count;
+
+    public Product() {
+    }
 
     public Product(String name,
                    String description,
