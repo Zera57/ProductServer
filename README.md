@@ -1,4 +1,4 @@
-# ServerJPA
+# ProductServer
 REST API сервер (Sring Web, Spring Data JPA, PostgreSQL Driver)
 
 Сервер для работы с базой данных продуктов. 🍌
